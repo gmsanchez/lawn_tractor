@@ -27,7 +27,7 @@
   <node pkg="mbf_costmap_nav" type="mbf_costmap_nav" respawn="false" name="move_base_flex" output="screen">
     <param name="tf_timeout" value="1.5"/>
     <param name="planner_max_retries" value="3"/>
-    <param name="SBPLLatticePlanner/primitive_filename" value="$(find lawn_tractor_navigation)/config/unicycle.mprim" />
+    <param name="SBPLLatticePlanner/primitive_filename" value="$(find lawn_tractor_navigation)/config/output.mprim" />
     <rosparam file="$(find lawn_tractor_navigation)/config/planners.yaml" command="load" />
     <rosparam file="$(find lawn_tractor_navigation)/config/controllers.yaml" command="load" />
     <rosparam file="$(find lawn_tractor_navigation)/config/recovery_behaviors.yaml" command="load" />
